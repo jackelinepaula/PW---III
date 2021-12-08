@@ -1,0 +1,255 @@
+*{
+    transition: 0.5s all;
+}
+
+body{
+    font-family: 'Poppins';
+    color: #161616;
+    background-color: #b8c2d128;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 0.2px solid #1616160e;
+    background-color: #fff;
+    
+}
+
+.header .logo{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    padding-left: 34px;
+}
+
+.header .logo h3{
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.header .menu{
+    display: flex;
+    flex-direction: row;
+
+    width: 24%;
+
+    justify-content: space-around;
+    margin-right: 32px;
+}
+
+.header .menu li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.header .menu a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #161616;
+    transition: 0.2s all;
+}
+
+.header .menu a:hover{
+    color: #789cce;
+    font-weight: bolder;
+    transition: 0.2s;
+}
+
+/*------- FORM ---------*/
+
+.container-form{
+    width: 100%;
+    display: flex;
+}
+
+.container-form .form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 64vh;
+    margin: auto;
+    transform: translateY(5%);
+    background-color: #fff;
+    padding: 3rem;
+    padding-top: 2rem;
+    box-shadow: 0px 0px 2rem #3c4f6910;
+}
+
+.form .titulo h3, .list .titulo h3{
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.form .titulo p, .list .titulo p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    color: #789cce;
+}
+
+.container-form .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.container-form .form form input{
+    width: 400px;
+    height: 45px;
+    margin-top: 1vw;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    border: 0.5px solid #789cce49;
+    font-family: 'Poppins';
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.container-form .form form button{
+    width: 350px;
+    height: 45px;
+    margin-top: 1vw;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Poppins';
+    background-color: #32578a;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 0px 1rem #4256701c;
+    cursor: pointer;
+}
+
+.container-form .form form button:hover{
+    background-color: #213a5e;
+}
+
+/* --------- TABELA ---------*/
+
+.container-list{
+    width: 100%;
+    display: flex;
+}
+
+.container-list .list{
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    min-height: 80vh;
+    margin: auto;
+    transform: translateY(1%);
+    background-color: #fff;
+    padding: 3rem;
+    padding-top: 2rem;
+    box-shadow: 0px 0px 2rem #3c4f6910;
+}
+
+.container-list .list table{
+    margin-top: 2rem;
+}
+
+.list .item-1{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.item-2{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    border-left: #213a5e 5px solid;
+    padding-left: 5px;
+    color: #213a5e;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon p{
+    border: 0.5px solid #32578a8f;
+    padding: 6px;
+    border-radius: 5px;
+    color: #32578a;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.icon p:hover{
+    font-weight: 500;
+    color: white;
+    background-color: #32578a;
+    transition: 0.1s;
+}
+
+.table .td{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table .td .buttons{
+    display: flex;
+    width: 12%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.table .td .buttons button{
+    outline: none;
+    border: none;
+    background-color: #2C3E50;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2rem #2c3e5021;
+    height: 30px;
+}
+
+
+.table .td .buttons button:hover{
+    background-color: #1f2c38;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #789cce;
+    bottom: 0;
+    top: 100vh;
+}
+
+footer p{
+
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+}

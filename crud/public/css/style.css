@@ -1,0 +1,258 @@
+*{
+    transition: 0.5s all;
+}
+
+body{
+    font-family: 'Poppins';
+    color: #161616;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 0.2px solid #1616160e;
+    background-color: #fff;
+    
+}
+
+.header .logo{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    padding-left: 34px;
+}
+
+.header .logo h3{
+    margin: 0;
+    font-weight: 600;
+}
+
+.header .menu{
+    display: flex;
+    flex-direction: row;
+
+    width: 24%;
+
+    justify-content: space-around;
+    margin-right: 32px;
+}
+
+.header .menu li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.header .menu a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #161616;
+    transition: 0.2s all;
+}
+
+.header .menu a:hover{
+    color: #789cce;
+    font-weight: bolder;
+    transition: 0.2s;
+}
+
+
+/*  ----------- HOME ------------- */
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.container .main{
+    width: 1200px;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .main .text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 32px;
+    padding-top: 42px;
+    margin-top: 32px;
+    margin-right: -50px;
+}
+
+.container .main .text h3{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    color: #789cce;
+}
+
+.container .main .text p{
+    font-size: 18px;
+}
+
+.container .main .text button{
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    background-color: #32578a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 0px 3rem #32578a34;
+    cursor: pointer;
+}
+
+.container .main .text button:hover{
+    background-color: #213a5e;
+}
+
+.container .main .photo img{
+    width: 670px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #789cce;
+    bottom: 0;
+    top: 100vh;
+}
+
+footer p{
+
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+}
+
+/*------- MEDIA QUERY ---------*/
+
+@media (max-width: 1000px){
+
+    .header .menu{
+        width: 30%;
+    }
+
+    .container .main{
+        width: 90%;
+        padding-right: 0px;
+    }
+
+    .container .main .text h3{
+        font-size: 28px;
+    }
+
+    .container .main .text p{
+        font-size: 16px;
+    }
+
+    .container .main .text button{
+        width: 120px;
+        height: 40px;
+
+        font-size: 16px;
+
+    }
+
+    .container .main .photo img{
+        margin-top: 10%;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 800px){
+    
+    .header .menu{
+        width: 35%;
+    }
+
+    .container .main{
+        width: 90%;
+        padding-right: 0px;
+    }
+    .container .main .text{
+        width: 70%;
+    }
+    .container .main .text h3{
+        font-size: 30px;
+    }
+
+    .container .main .text p{
+        font-size: 18px;
+    }
+
+    .container .main .text button{
+        width: 120px;
+        height: 40px;
+
+        font-size: 16px;
+
+    }
+
+    .container .main .photo img{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    
+    .header .menu{
+        width: 35%;
+    }
+
+    .container .main{
+        width: 90%;
+        padding-right: 0px;
+    }
+    .container .main .text{
+        width: 70%;
+    }
+    .container .main .text h3{
+        font-size: 30px;
+    }
+
+    .container .main .text p{
+        font-size: 18px;
+    }
+
+    .container .main .text button{
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .container .main .photo img{
+        display: none;
+    }
+}
+

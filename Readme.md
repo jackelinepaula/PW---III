@@ -1,1 +1,3 @@
-Olá, estou aprendendo usar o Git e GitHub
+# PW-III
+
+Projetos e exercícios acadêmicos - 3°ano
