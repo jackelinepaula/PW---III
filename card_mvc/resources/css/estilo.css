@@ -1,0 +1,104 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    justify-content: center;
+    height: 80vh;
+    gap: 30px;
+}
+
+
+#card-um{
+    background-color: #571008;
+    box-shadow: 0 0.2rem 0.5rem #571008;
+    border-radius: 2px;
+    color: white;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 50vh 20vh;
+    grid-template-areas: 'image' 'text';
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#card-dois{
+    background-color: #202020;
+    box-shadow: 0 0.2rem 0.5rem #202020;
+    border-radius: 2px;
+    color: white;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 50vh 20vh;
+    grid-template-areas: 'image' 'text';
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#card-tres{
+    background-color: #ffcccc;
+    box-shadow: 0 0.2rem 0.5rem #ffcccc;
+    border-radius: 2px;
+    color: rgb(31, 31, 31);
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 50vh 20vh;
+    grid-template-areas: 'image' 'text';
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-image{
+    grid-area: image;
+}
+.card-text{
+    grid-area: text;
+}
+
+#cd-img1{
+    width: 200px;
+    margin-left: 20px;
+}
+#cd-img2{
+    width: 260px;
+    margin-right: 15px;
+}
+#cd-img3{
+    width: 200px;
+    margin-left: 20px;
+}
+
+#name-price h4{
+    margin: 0;
+}
+#name-price h5{
+    margin: 0;
+}
+
+#card-um p{
+    font-size: 14px;
+}
+
+#card-dois p{
+    font-size: 14px;
+}
+
+#card-tres p{
+    font-size: 14px;
+}
+
+#card-um:hover{
+    transform: scale(1.025);
+}
+#card-dois:hover{
+    transform: scale(1.025);
+}
+#card-tres:hover{
+    transform: scale(1.025);
+}
